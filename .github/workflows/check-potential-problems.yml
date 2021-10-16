@@ -23,3 +23,11 @@ jobs:
 
       - name: 使用 pre-commit 檢查專案中的所有檔案
         run: pre-commit run --all-files --color always
+
+      - name: 傳送持續整合結果告警到 Telegram 頻道
+        uses: yanzay/notify-telegram@v0.1.0
+        if: always()
+        with:
+          chat: '@libre_knowledge_ci'
+          token: ${{ secrets.telegram_bot_api_token_ci }}
+          status: ${{ job.status }}
