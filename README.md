@@ -2,7 +2,7 @@
 
 快速創建風格一致的《自由知識協作平台》主題
 
-## 使用方式
+## 使用說明
 
 1. 點擊 [GitHub 專案頁面](https://github.com/libre-knowledge/subject-template)右上角的[「使用這個範本(Use this template)」綠色按鈕](./generate)
 1. 遵循網頁提示建立新的專案
