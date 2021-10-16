@@ -12,3 +12,8 @@
 1. 將 [real.README.md 主題說明文件模板](real.README.md) 替換掉 [README.md 本專案說明文件](README.md)
 1. 將變更提交為新修訂版（參考提交標題： `docs: 撰寫主題說明文件雛型`）
 1. （如果是將專案版控庫復刻(clone)到本地）將本地變更推送到遠端版控庫）
+
+## 參考資料
+
+* [Machine-readable debian/copyright file](https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/)
+* [Tutorial: How to become REUSE-compliant | REUSE](https://reuse.software/tutorial/)
