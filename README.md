@@ -8,5 +8,6 @@
 1. 遵循網頁提示建立新的專案
 1. 編輯 [real.README.md 主題說明文件模板](real.README.md)，將 `_佔位字_` 替換為適當之內容，並移除未使用之（待補）章節
 1. 將 [real.README.md 主題說明文件模板](real.README.md) 替換掉 [README.md 本專案說明文件](README.md)
+1. 用 [real.markdownlint.yml Markdownlint 配置文件](real.markdownlint.yml) 替換掉 [real.markdownlint.yml 本專案專屬的 Markdownlint 配置文件](real.markdownlint.yml)
 1. 將變更提交為新修訂版（參考提交標題： `docs: 撰寫主題說明文件雛型`）
 1. （如果是將專案版控庫復刻(clone)到本地）將本地變更推送到遠端版控庫）
