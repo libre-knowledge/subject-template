@@ -18,4 +18,4 @@
 ## 參考資料
 
 * [Machine-readable debian/copyright file](https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/)
-* [Tutorial: How to become REUSE-compliant | REUSE](https://reuse.software/tutorial/)
+* [Tutorial: How to become REUSE-compliant \| REUSE](https://reuse.software/tutorial/)
