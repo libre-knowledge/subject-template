@@ -15,3 +15,9 @@ _主題描述文字_
 ## 參考資料
 
 （待補）
+
+---
+
+本主題為[自由知識協作平台](https://libre-knowledge.github.io/)的一部分，除部份特別標註之經合理使用(fair use)原則使用的內容外允許公眾於授權範圍內自由使用
+
+如有任何問題，歡迎於本主題的[議題追蹤系統](https://github.com/libre-knowledge/_專案ID_/issues)創建新議題反饋
