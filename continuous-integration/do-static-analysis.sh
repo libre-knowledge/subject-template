@@ -53,7 +53,7 @@ if ! test -v CI; then
         printf \
             'Info: Installing base runtime dependency packages...\n'
         if ! \
-            apt install \
+            apt-get install \
                 -y \
                 "${base_runtime_dependency_pkgs[@]}"; then
             printf \
@@ -155,7 +155,7 @@ runtime_dependency_pkgs=(
 if ! dpkg -s "${runtime_dependency_pkgs[@]}" &>/dev/null; then
     printf \
         'Info: Installing the runtime dependency packages...\n'
-    if ! apt install -y \
+    if ! apt-get install -y \
         "${runtime_dependency_pkgs[@]}"; then
         printf \
             'Error: Unable to install the runtime dependency packages.\n' \
