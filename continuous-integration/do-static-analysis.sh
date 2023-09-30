@@ -46,19 +46,21 @@ if test "$((current_time_epoch - apt_archive_cache_mtime_epoch))" -ge 86400; the
 fi
 
 if ! test -v CI; then
-    printf \
-        'Info: Installing base runtime dependency packages...\n'
     base_runtime_dependency_pkgs=(
         wget
     )
-    if ! \
-        apt install \
-            -y \
-            "${base_runtime_dependency_pkgs[@]}"; then
+    if ! dpkg -s "${base_runtime_dependency_pkgs[@]}" &>/dev/null; then
         printf \
-            'Error: Unable to install the base runtime dependency packages.\n' \
-            1>&2
-        exit 2
+            'Info: Installing base runtime dependency packages...\n'
+        if ! \
+            apt install \
+                -y \
+                "${base_runtime_dependency_pkgs[@]}"; then
+            printf \
+                'Error: Unable to install the base runtime dependency packages.\n' \
+                1>&2
+            exit 2
+        fi
     fi
 
     printf \
