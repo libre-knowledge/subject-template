@@ -6,9 +6,43 @@
 
 ## 使用說明
 
-1. 點擊 [GitHub 專案頁面](https://github.com/libre-knowledge/subject-template)右上角的[「使用這個範本(Use this template)」綠色按鈕](https://github.com/libre-knowledge/subject-template/generate)
-1. 遵循網頁提示建立新的專案
-1. 編輯 [real.README.md 主題說明文件模板](real.README.md)，將 `_佔位字_` 替換為適當之內容（別忘了替換 `libre-knowledge/_專案ID_`），並移除未使用之（待補）章節
+1. 確保已將[自由知識協作平台 Libre Knowledge Collaboration Platform · GitLab](https://gitlab.com/libre-knowledge/libre-knowledge)專案的 Git 版控庫拓製至本地，且已拉取當前最新的修訂版
+1. 開啟[自由知識協作平台 Libre Knowledge Collaboration Platform · GitLab](https://gitlab.com/libre-knowledge)頁面
+1. 點擊上側的「New project」藍色按鈕建立新的專案（目前本專案不支持使用 GitLab 的子群組架構，請一律將專案創建在最上層群組中）
+    + 「Project name」欄位填入適當的主題標題（中文 + 英文）
+    + 「Project slug」欄位填入適當的主題識別名稱（可以採用比較常見的英文縮寫）
+    + 「Project deployment target (optional)」欄位下拉式選單選擇「No deployment planned」
+    + 「Visibility Level」選擇「Public」
+    + 「Project Configuration」區塊勾選「Initialize repository with a README」
+1. 點擊新專案頁面右側的藍色「Clone」按鈕以獲取 Git 版控庫的拓製(clone)地址
+1. 於本地啟動一個文字終端應用
+1. 切換作業目錄至要放置該主題的「自由知識協作平台」目錄
+1. 執行下列命令將主題專案的 Git 版控庫以 Git 子模組的形式新增至本地先前已拓製到本地的「自由知識協作平台」：
+
+    ```bash
+    git submodule add \
+        --name '_主題中文名稱_ _主題英文名稱_' \'
+        https://gitlab.com/libre-knowledge/_主題識別名稱_.git \
+        '/path/to/自由知識協作平台 Libre Knowledge Collaboration Platform/_親主題路徑（如果有）_/_主題中文名稱_ _主題英文名稱_'
+    ```
+
+1. 編輯「自由知識協作平台 Libre Knowledge Collaboration Platform」主版控庫的 [.gitmodules 文件](https://gitlab.com/libre-knowledge/libre-knowledge/-/blob/main/.gitmodules)，合併新主題子模組下列 Git 子模組配置：
+
+    ```ini
+    [submodule "_主題中文名稱_ _主題英文名稱_"]
+        ignore = dirty
+    ```
+
+1. 以下列修訂版提交訊息將「自由知識協作平台 Libre Knowledge Collaboration Platform」主版控庫的變更提交為一新修訂版：
+
+    ```git-commit-msg
+    chore: 新增「_主題中文名稱_ _主題英文名稱_」主題
+    ```
+
+1. 將本專案除下列以外專案文件複製到新的主題專案中：
+    + README.md
+    + .git
+1. 編輯子模組專案 [real.README.md 主題說明文件模板](real.README.md)，將 `_佔位字_` 替換為適當之內容（別忘了替換 `libre-knowledge/_專案ID_`），並移除未使用之（待補）章節
 1. 用 [real.markdownlint.yml Markdownlint 配置文件](real.markdownlint.yml) 替換掉 [.markdownlint.yml 本專案專屬的 Markdownlint 配置文件](.markdownlint.yml)
 1. 替換 [.reuse/dep5 REUSE DEP5 機器可讀著作權宣告文件](.reuse/dep5) 文件中的 `Upstream-Name`（替換為 _主題名稱_）欄位、 `Upstream-Contact`（替換為該主題專案議題追蹤系統的網頁標題與網址）欄位跟 `Source`（替換為專案網址）欄位
 1. 將 [real.README.md 主題說明文件模板](real.README.md) 替換掉 [README.md 本專案說明文件](README.md)
