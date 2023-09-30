@@ -143,8 +143,6 @@ if ! test -v CI; then
     fi
 fi
 
-printf \
-    'Info: Installing the runtime dependency packages...\n'
 runtime_dependency_pkgs=(
     git
 
@@ -153,6 +151,8 @@ runtime_dependency_pkgs=(
     python3-venv
 )
 if ! dpkg -s "${runtime_dependency_pkgs[@]}" >/dev/null; then
+    printf \
+        'Info: Installing the runtime dependency packages...\n'
     if ! apt install -y \
         "${runtime_dependency_pkgs[@]}"; then
         printf \
