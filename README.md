@@ -14,6 +14,11 @@
     + 「Project deployment target (optional)」欄位下拉式選單選擇「No deployment planned」
     + 「Visibility Level」選擇「Public」
     + 「Project Configuration」區塊勾選「Initialize repository with a README」
+1. 點擊新專案頁面左側欄的 Settings > General 選項開啟 General Settings 設定頁面，進行下列設定：
+    + Topics
+        - `自由知識協作平台 Libre Knowledge Collaboration Platform`
+        - `自由知識協作平台主題 L.K.C.P. Topics`
+    + Project description 欄位輸入主題適當的文字描述
 1. 點擊新專案頁面右側的藍色「Clone」按鈕以獲取 Git 版控庫的拓製(clone)地址
 1. 於本地啟動一個文字終端應用
 1. 切換作業目錄至要放置該主題的「自由知識協作平台」目錄
