@@ -150,7 +150,7 @@ runtime_dependency_pkgs=(
     python3-pip
     python3-venv
 )
-if ! dpkg -s "${runtime_dependency_pkgs[@]}" >/dev/null; then
+if ! dpkg -s "${runtime_dependency_pkgs[@]}" &>/dev/null; then
     printf \
         'Info: Installing the runtime dependency packages...\n'
     if ! apt install -y \
