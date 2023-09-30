@@ -38,7 +38,7 @@ current_time_epoch="$(
 if test "$((current_time_epoch - apt_archive_cache_mtime_epoch))" -ge 86400; then
     printf \
         'Info: Refreshing the APT local package cache...\n'
-    if ! apt update; then
+    if ! apt-get update; then
         printf \
             'Error: Unable to refresh the APT local package cache.\n' \
             1>&2
@@ -134,7 +134,7 @@ if ! test -v CI; then
 
         printf \
             'Info: Refreshing the local APT software archive cache...\n'
-        if ! apt update; then
+        if ! apt-get update; then
             printf \
                 'Error: Unable to refresh the local APT software archive cache.\n' \
                 1>&2
