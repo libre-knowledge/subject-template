@@ -19,3 +19,9 @@
 
 * [Machine-readable debian/copyright file](https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/)
 * [Tutorial: How to become REUSE-compliant \| REUSE](https://reuse.software/tutorial/)
+* [‎How to test whether a Debian package is installed in a shell script? | Google Bard](https://bard.google.com/share/21fb868d9e6f)  
+  說明如何在 Shell 腳本中檢查特定 Debian 軟體包是否已安裝
+* [‎How to verify whether the APT repository cache has been refreshed recently? | Google Bard](https://bard.google.com/share/8bb0ad0135b1)  
+  說明如何檢查 APT 軟體庫本地快取是否近期有被刷新
+* [Predefined variables reference | GitLab](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html)  
+  說明 GitLab CI 環境會設定的環境變數
