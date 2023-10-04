@@ -10,5 +10,13 @@
 static-analysis:
   stage: test
   image: ubuntu:20.04
+  variables:
+    PIP_CACHE_DIR: ${CI_PROJECT_DIR}/.cache/pip
+    PRE_COMMIT_HOME: ${CI_PROJECT_DIR}/.cache/pre-commit
+  cache:
+    paths:
+      - ${PIP_CACHE_DIR}
+      - ${PRE_COMMIT_HOME}
+
   script:
     - ./continuous-integration/do-static-analysis.sh
