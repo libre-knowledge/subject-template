@@ -87,3 +87,5 @@
   說明如何於 GitLab CI 中配置 pre-commit 資源的快取以減少後續流水線所需的運行時間
 * [Share caches between jobs in the same branch | Caching in GitLab CI/CD | GitLab](https://docs.gitlab.com/ee/ci/caching/index.html#share-caches-between-jobs-in-the-same-branch)  
   說明 GitLab CI 如何在同分支的同 CI 工作(job)間共享快取資料
+* debconf(7) 的 manpage 使用手冊頁面  
+  說明不同類型 debconf 前端界面的用途

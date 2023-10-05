@@ -45,6 +45,9 @@ if test "$((current_time_epoch - apt_archive_cache_mtime_epoch))" -ge 86400; the
     fi
 fi
 
+# Silence warnings regarding unavailable debconf frontends
+export DEBIAN_FRONTEND=noninteractive
+
 if ! test -v CI; then
     base_runtime_dependency_pkgs=(
         wget
