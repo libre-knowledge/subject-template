@@ -85,3 +85,5 @@
   說明 GitLab CI 環境會設定的環境變數
 * [gitlab CI example - Contributing - pre-commit documentation](https://pre-commit.com/#gitlab-ci-example)  
   說明如何於 GitLab CI 中配置 pre-commit 資源的快取以減少後續流水線所需的運行時間
+* [Share caches between jobs in the same branch | Caching in GitLab CI/CD | GitLab](https://docs.gitlab.com/ee/ci/caching/index.html#share-caches-between-jobs-in-the-same-branch)  
+  說明 GitLab CI 如何在同分支的同 CI 工作(job)間共享快取資料

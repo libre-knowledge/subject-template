@@ -14,6 +14,8 @@ static-analysis:
     PIP_CACHE_DIR: ${CI_PROJECT_DIR}/.cache/pip
     PRE_COMMIT_HOME: ${CI_PROJECT_DIR}/.cache/pre-commit
   cache:
+    # Enable per-job and per-branch caching
+    key: $CI_JOB_NAME-$CI_COMMIT_REF_SLUG
     paths:
       - ${PIP_CACHE_DIR}
       - ${PRE_COMMIT_HOME}
