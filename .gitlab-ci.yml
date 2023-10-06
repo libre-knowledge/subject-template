@@ -9,7 +9,7 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 static-analysis:
   stage: test
-  image: ubuntu:20.04
+  image: ubuntu:22.04
   variables:
     PIP_CACHE_DIR: ${CI_PROJECT_DIR}/.cache/pip
     PRE_COMMIT_HOME: ${CI_PROJECT_DIR}/.cache/pre-commit
