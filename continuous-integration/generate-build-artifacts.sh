@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-# Check potential problems in the project
-# Copyright 2023 林博仁(Buo-ren, Lin) <Buo.Ren.Lin@gmail.com>
+# Generate the project build artifacts
+#
+# Copyright 2023 林博仁(Buo-ren, Lin) <buo.ren.lin@gmail.com>
 # SPDX-License-Identifier: CC-BY-SA-4.0
 set \
     -o errexit \
@@ -43,26 +44,51 @@ if ! source "${script_dir}/venv/bin/activate"; then
 fi
 
 printf \
-    'Info: Installing pre-commit...\n'
-if ! pip show pre-commit &>/dev/null; then
-    if ! pip install pre-commit; then
+    'Info: Installing git-archive-all...\n'
+if ! pip show git-archive-all &>/dev/null; then
+    if ! pip install git-archive-all; then
         printf \
-            'Error: Unable to install pre-commit.\n' \
+            'Error: Unable to install git-archive-all.\n' \
             1>&2
         exit 2
     fi
 fi
 
 printf \
-    'Info: Running pre-commit...\n'
-if ! \
-    pre-commit run \
-        --all-files \
-        --color always; then
+    'Info: Determining the project version...\n'
+git_describe_opts=(
+    --always
+    --dirty
+    --tags
+)
+if ! version_describe="$(
+    git describe \
+        "${git_describe_opts[@]}"
+    )"; then
     printf \
-        'Error: pre-commit check has failed, please verify.\n' \
+        'Error: Unable to determine the project version.\n' \
         1>&2
-    exit 3
+    exit 2
+fi
+project_version="${version_describe#v}"
+
+printf \
+    'Info: Generating the project archive...\n'
+project_id="${CI_PROJECT_NAME:-"${project_id}"}"
+release_id="${project_id}-${project_version}"
+git_archive_all_opts=(
+    # Add an additional layer of folder for containing the archive
+    # contents
+    --prefix="${release_id}/"
+)
+if ! \
+    git-archive-all \
+        "${git_archive_all_opts[@]}" \
+        "${release_id}.tar.gz"; then
+    printf \
+        'Error: Unable to generate the project archive.\n' \
+        1>&2
+    exit 2
 fi
 
 printf \
