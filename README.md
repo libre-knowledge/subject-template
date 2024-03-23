@@ -20,7 +20,7 @@
         - `自由知識協作平台 Libre Knowledge Collaboration Platform`
         - `自由知識協作平台主題 L.K.C.P. Topics`
     + Project description 欄位輸入主題適當的文字描述
-1. 點擊新專案頁面右側的藍色「Clone」按鈕以獲取 Git 版控庫的拓製(clone)地址
+1. 回到專案主頁面，點擊頁面右側的藍色「Clone」按鈕以獲取 Git 版控庫的拓製(clone)地址
 1. 於本地啟動一個文字終端應用
 1. 切換作業目錄至要放置該主題的「自由知識協作平台」目錄
 1. 執行下列命令將主題專案的 Git 版控庫以 Git 子模組的形式新增至本地先前已拓製到本地的「自由知識協作平台」：
