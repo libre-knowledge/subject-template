@@ -7,6 +7,8 @@
 
 ## 使用說明
 
+本章節說明如何使用這個主題範本創建新的《自由知識協作平台》主題：
+
 1. 確保已將[自由知識協作平台 Libre Knowledge Collaboration Platform · GitLab](https://gitlab.com/libre-knowledge/libre-knowledge)專案的 Git 版控庫拓製至本地，且已拉取當前最新的修訂版
 1. 開啟[自由知識協作平台 Libre Knowledge Collaboration Platform · GitLab](https://gitlab.com/libre-knowledge)頁面
 1. 點擊上側的「New project」藍色按鈕建立新的專案（目前本專案不支持使用 GitLab 的子群組架構，請一律將專案創建在最上層群組中）
@@ -75,6 +77,8 @@
     ```
 
 ## 參考資料
+
+本章節列舉開發本專案期間所參考的第三方資料：
 
 * [Machine-readable debian/copyright file](https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/)  
   說明 REUSE DEP5 檔案的撰寫格式
