@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Check potential problems in the project
 # Copyright 2023 林博仁(Buo-ren, Lin) <Buo.Ren.Lin@gmail.com>
-# SPDX-License-Identifier: CC-BY-SA-4.0
+# SPDX-License-Identifier: CC-BY-SA-4.0 OR LicenseRef-Apache-2.0-If-Not-Used-In-Template-Projects
 set \
     -o errexit \
     -o nounset
@@ -19,6 +19,8 @@ if ! script="$(
 fi
 
 script_dir="${script%/*}"
+project_dir="$(dirname "${script_dir}")"
+cache_dir="${project_dir}/.cache"
 
 if ! test -e "${script_dir}/venv"; then
     printf \
@@ -52,6 +54,10 @@ if ! pip show pre-commit &>/dev/null; then
         exit 2
     fi
 fi
+
+printf \
+    'Info: Setting up the command search PATHs so that the installed shellcheck command can be located...\n'
+PATH="${cache_dir}/shellcheck-stable:${PATH}"
 
 printf \
     'Info: Running pre-commit...\n'
