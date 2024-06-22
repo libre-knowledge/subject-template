@@ -57,6 +57,7 @@
 1. 將本專案除下列以外專案文件複製到新的主題專案中：
     + README.md
     + .git
+    + .gitattributes
     + .markdownlint.yml
 1. 編輯子模組專案 [real.README.md 主題說明文件模板](real.README.md)，將 `_佔位字_` 替換為適當之內容（別忘了替換 `libre-knowledge/_專案ID_`），並移除未使用之（待補）章節
 1. 用 [real.markdownlint.yml Markdownlint 配置文件](real.markdownlint.yml)替換掉 [.markdownlint.yml 本專案專屬的 Markdownlint 配置文件](.markdownlint.yml)
