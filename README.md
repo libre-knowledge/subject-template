@@ -14,7 +14,7 @@
 1. 點擊上側的「New project」藍色按鈕建立新的專案（目前本專案不支持使用 GitLab 的子群組架構，請一律將專案創建在最上層群組中）
     + 「Project name」欄位填入適當的主題標題（中文 + 英文）
     + 「Project slug」欄位填入適當的主題識別名稱（可以採用比較常見的英文縮寫）
-    + 「Project deployment target (optional)」欄位下拉式選單選擇「No deployment planned」
+    + 「Project deployment target (optional)」欄位下拉式選單選擇「Registry (package or container)」
     + 「Visibility Level」選擇「Public」
     + 「Project Configuration」區塊勾選「Initialize repository with a README」
 1. 點擊新專案頁面左側欄的 Settings > General 選項開啟 General Settings 設定頁面，進行下列設定：
