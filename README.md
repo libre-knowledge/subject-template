@@ -32,7 +32,7 @@
     1. 複製中間 Quick setup 區域的 HTTPS 協議的版控庫<ruby>拓製<rp>(</rp><rt>clone</rt><rp>)</rp></ruby>地址
     1. 於 GitLab 專案「Settings > Repository」頁面中的「Mirroring repositories」區塊中點擊右側的「Add new」按鈕新增新的鏡像版控庫
     1. 於「Git repository URL」欄位貼入剛剛複製的鏡像版控庫地址
-    1. 於「Username」欄位貼入您的 GitHub 使用者名稱（直接留空也可以，因為 GitHub 不使用這個欄位區分使用者帳號）
+    1. 於「Username」欄位貼入您的 GitHub 使用者名稱
     1. 於「Password」欄位貼入您的鏡像版控庫推送用 GitHub 個人存取用象徵物(Personal Access Token)
     1. 點擊下方的藍色「Mirror repository」按鈕保存鏡像版控庫設定
     1. 點擊新建立的鏡像版控庫設定右側的重新整理按鈕手動觸發鏡像程序
