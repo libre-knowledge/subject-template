@@ -113,3 +113,9 @@
   說明 GitLab CI 如何在同分支的同 CI 工作(job)間共享快取資料
 * debconf(7) 的 manpage 使用手冊頁面  
   說明不同類型 debconf 前端界面的用途
+
+---
+
+本主題為[自由知識協作平台](https://gitlab.com/libre-knowledge/libre-knowledge)的一部分，除部份特別標註之經合理使用(fair use)原則使用的內容外允許公眾於授權範圍內自由使用
+
+如有任何問題，歡迎於本主題的[議題追蹤系統](https://gitlab.com/libre-knowledge/gitlab-organization-templates/subject-template/-/issues)創建新議題反饋
