@@ -22,6 +22,21 @@
         - `自由知識協作平台 Libre Knowledge Collaboration Platform`
         - `自由知識協作平台主題 L.K.C.P. Topics`
     + Project description 欄位輸入主題適當的文字描述
+1. 如果您有 GitHub 組織權限：
+    1. 開啟[自由知識協作平台（鏡像用） Libre Knowledge Collaboration Platform(Mirrored)](https://github.com/libre-knowledge) 頁面
+    1. 點擊中間右側的「New」綠色按鈕建立新的專案
+    1. 「Repository name」欄位填入先前使用的主題識別名稱
+    1. 「Description」欄位填入先前使用的主題文字描述
+    1. 訪問權限單一選項提問選擇「Public」
+    1. 點擊右下角的綠色「Create repository」按鈕創建專案
+    1. 點擊右側的綠色「Code」按鈕複製 HTTPS 協議的版控庫<ruby>拓製<rp>(</rp><rt>clone</rt><rp>)</rp></ruby>地址
+    1. 於 GitLab 專案「Settings > Repository」頁面中的「Mirroring repositories」區塊中點擊右側的「Add new」按鈕新增新的鏡像版控庫
+    1. 於「Git repository URL」欄位貼入剛剛複製的鏡像版控庫地址
+    1. 於「Username」欄位貼入您的 GitHub 使用者名稱（直接留空也可以，因為 GitHub 不使用這個欄位區分使用者帳號）
+    1. 於「Password」欄位貼入您的鏡像版控庫推送用 GitHub 個人存取用象徵物(Personal Access Token)
+    1. 點擊下方的藍色「Mirror repository」按鈕保存鏡像版控庫設定
+    1. 點擊新建立的鏡像版控庫設定右側的重新整理按鈕手動觸發鏡像程序
+    1. 確認 GitHub 鏡像版控庫有被成功推送
 1. 回到專案主頁面，點擊頁面右側的藍色「Clone」按鈕以獲取 Git 版控庫的拓製(clone)地址
 1. 於本地啟動一個文字終端應用
 1. 切換作業目錄至要放置該主題的「自由知識協作平台」目錄
