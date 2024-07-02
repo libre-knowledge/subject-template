@@ -29,7 +29,7 @@
     1. 「Description」欄位填入先前使用的主題文字描述
     1. 訪問權限單一選項提問選擇「Public」
     1. 點擊右下角的綠色「Create repository」按鈕創建專案
-    1. 點擊右側的綠色「Code」按鈕複製 HTTPS 協議的版控庫<ruby>拓製<rp>(</rp><rt>clone</rt><rp>)</rp></ruby>地址
+    1. 複製中間 Quick setup 區域的 HTTPS 協議的版控庫<ruby>拓製<rp>(</rp><rt>clone</rt><rp>)</rp></ruby>地址
     1. 於 GitLab 專案「Settings > Repository」頁面中的「Mirroring repositories」區塊中點擊右側的「Add new」按鈕新增新的鏡像版控庫
     1. 於「Git repository URL」欄位貼入剛剛複製的鏡像版控庫地址
     1. 於「Username」欄位貼入您的 GitHub 使用者名稱（直接留空也可以，因為 GitHub 不使用這個欄位區分使用者帳號）
