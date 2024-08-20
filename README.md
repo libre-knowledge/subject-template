@@ -77,7 +77,6 @@
 1. 編輯子模組專案 [real.README.md 主題說明文件模板](real.README.md)，將 `_佔位字_` 替換為適當之內容（別忘了替換 `libre-knowledge/_專案ID_`），並移除未使用之（待補）章節
 1. 將 [real.markdownlint.yml Markdownlint 配置文件](real.markdownlint.yml)更名為「.markdownlint.yml」
 1. 將 [real.gitattributes Git 路徑屬性配置文件](real.gitattributes)更名為「.gitattributes」
-1. 替換 [.reuse/dep5 REUSE DEP5 機器可讀著作權宣告文件](.reuse/dep5)文件中的 `Upstream-Name`（替換為 _主題名稱_）欄位、 `Upstream-Contact`（替換為該主題專案議題追蹤系統的網頁標題與網址）欄位跟 `Source`（替換為專案網址）欄位
 1. 將原始的 README.md 檔案使用 [real.README.md 主題說明文件模板](real.README.md) 替換
 1. 執行下列命令（或等效操作）將範本用自定義授權條款移除：
 
