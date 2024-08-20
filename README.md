@@ -41,6 +41,14 @@
         - Wikis
         - Issues
         - Projects
+    1. 於 GitHub 專案 > About 面板進行下列設定：
+        - 於 Website 欄位填入 GitLab 專案的網址
+        - 於 Topics 欄位新增下列主題標籤：
+            * `lkcp`
+            * `lkcp-topics`
+        - 於 Include in the home page 欄位將下列項目取消勾選
+            * Packages
+            * Deployments
 1. 回到新建立之專案的主頁面，點擊頁面右側的藍色「Clone」按鈕以獲取 Git 版控庫的拓製(clone)地址
 1. 於本地啟動一個文字終端應用
 1. 切換作業目錄至要新增該主題之「自由知識協作平台」根/子主題目錄
