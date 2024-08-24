@@ -56,7 +56,7 @@
 
     ```bash
     git submodule add \
-        --name '_主題中文名稱_ _主題英文名稱_' \'
+        --name '_主題中文名稱_ _主題英文名稱_' \
         https://gitlab.com/libre-knowledge/_主題識別名稱_.git \
         '/path/to/自由知識協作平台 Libre Knowledge Collaboration Platform/_親主題路徑（如果有）_/_主題中文名稱_ _主題英文名稱_'
     ```
