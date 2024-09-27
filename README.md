@@ -74,6 +74,12 @@
     + .git
     + .gitattributes
     + .markdownlint.yml
+1. （選用）於文字終端中切換作業目錄至新主題中後執行下列命令安裝 pre-commit 框架的配套 Git 提交前掛勾程序：
+
+    ```bash
+    pre-commit install
+    ```
+
 1. 編輯子模組專案 [real.README.md 主題說明文件模板](real.README.md)，將 `_佔位字_` 替換為適當之內容（別忘了替換 `libre-knowledge/_專案ID_`），並移除未使用之（待補）章節
 1. 將 [real.markdownlint.yml Markdownlint 配置文件](real.markdownlint.yml)更名為「.markdownlint.yml」
 1. 將 [real.gitattributes Git 路徑屬性配置文件](real.gitattributes)更名為「.gitattributes」
