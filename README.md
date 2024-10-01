@@ -116,7 +116,7 @@
 
 ## 參考資料
 
-本章節列舉開發本專案期間所參考的第三方資料：
+以下列舉撰寫本主題內容時所參考的第三方資源：
 
 * [Machine-readable debian/copyright file](https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/)  
   說明 REUSE DEP5 檔案的撰寫格式

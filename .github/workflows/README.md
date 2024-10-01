@@ -1,8 +1,8 @@
 # workflows
 
-放置 [GitHub Actions](https://github.com/features/actions) 的工作流程(workflow)定義檔
+Workflow definition files of the [GitHub Actions Continuous Integration(CI) service](https://github.com/features/actions)
 
-## 參考資料<br>Reference
+## Reference
 
 * [Features • GitHub Actions](https://github.com/features/actions)  
   Product page
