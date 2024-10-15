@@ -18,10 +18,10 @@
     + 「Visibility Level」選擇「Public」
     + 「Project Configuration」區塊勾選「Initialize repository with a README」
 1. 點擊新專案頁面左側欄的 Settings > General 選項開啟 General Settings 設定頁面，進行下列設定：
+    + Project description 欄位輸入主題適當的文字描述
     + Topics
         - `自由知識協作平台 Libre Knowledge Collaboration Platform`
         - `自由知識協作平台主題 L.K.C.P. Topics`
-    + Project description 欄位輸入主題適當的文字描述
 1. 如果您有 GitHub 組織權限：
     1. 開啟[自由知識協作平台（鏡像用） Libre Knowledge Collaboration Platform(Mirrored)](https://github.com/libre-knowledge) 頁面
     1. 點擊中間右側的「New」綠色按鈕建立新的專案
